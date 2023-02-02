@@ -1,4 +1,4 @@
-listcolor=["purple", "yellow", "orange"]
-length=len(listcolor)
-print(length)
-print(*listcolor, sep= "\n")
+colorlist=["purple", "yellow", "orange"]
+print("I have", len(colorlist), "colors:")
+for color in colorlist:
+    print(color)
