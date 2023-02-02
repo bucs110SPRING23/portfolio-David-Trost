@@ -3,6 +3,6 @@
 
 - Preferred Name: David
 - Discord Username:David Trost
-- Github Username:David-Trost
+- Github Username: David-Trost
 
 ![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg) by putting `https://gitpod.io/#` before your repo url.
