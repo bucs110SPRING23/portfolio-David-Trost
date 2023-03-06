@@ -4,11 +4,11 @@ import math
 
 pygame.init()
 
-# Set up the screen
+
 screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Dart Game")
 screen_width, screen_height = pygame.display.get_surface().get_size()
-# Colors
+
 white = (255, 255, 255)
 black = (0, 0, 0)
 red = (252, 3, 78)
@@ -20,12 +20,12 @@ dartboard_radius = min(screen_width, screen_height) // 2
 dartboard_center = (screen_width//2, screen_height//2)
 pygame.draw.circle(screen, white, dartboard_center, dartboard_radius, 0)
 
-# Draw the dartboard lines
+
 start_point = (dartboard_center[0] - dartboard_radius, dartboard_center[1])
 end_point = (dartboard_center[0] + dartboard_radius, dartboard_center[1])
 pygame.draw.line(screen, black, start_point, end_point, 5)
 pygame.draw.line(screen, black, (dartboard_center[0], dartboard_center[1] - dartboard_radius), (dartboard_center[0], dartboard_center[1] + dartboard_radius), 5)
-# Draw the boxes for player 1 and player 2
+
 player1_box = pygame.Rect(50, 200, 50, 50)
 pygame.draw.rect(screen, red, player1_box)
 player2_box = pygame.Rect(700, 200, 50, 50)
@@ -33,10 +33,10 @@ pygame.draw.rect(screen, blue, player2_box)
 
 
 
-# Update the display
+
 pygame.display.flip()
 
-# Wait for the user to click on a box
+
 player_selected = False
 while not player_selected:
     for event in pygame.event.get():
@@ -84,7 +84,7 @@ elif player_scores[1] > player_scores[0]:
 else:
     winner = "Tie"
 
-# Print the winner on the screen
+
 if player_scores[0] > player_scores[1]:
     winner = player_names[0]
 elif player_scores[1] > player_scores[0]:
@@ -92,7 +92,7 @@ elif player_scores[1] > player_scores[0]:
 else:
     winner = "Tie"
 
-# Display the winner on the screen
+
 font = pygame.font.SysFont(None, 60)
 if winner == "Tie":
     text = font.render("Tie", True, green)
