@@ -9,7 +9,8 @@ for i in range(1000):
     elif guess> random_number: 
         print("Too high")
     else:
-        print("Correct! You guessed the number in",guess_count,"times")
+        print("Correct! You guessed the number in",guess_count,"tries")
         break
+    
 
     
