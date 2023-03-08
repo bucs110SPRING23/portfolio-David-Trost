@@ -9,5 +9,6 @@ def rstar_pyramid(rows):
 levels=int(input("Enter the desired pyramid height:"))
 
 star_pyramid(levels)
+
 rstar_pyramid(levels)
 
