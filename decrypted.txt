@@ -1,0 +1,1 @@
+<_io.TextIOWrapper name='decrypted.txt' mode='w' encoding='cp1252'>
