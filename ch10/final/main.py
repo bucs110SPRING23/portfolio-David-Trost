@@ -8,7 +8,7 @@ def main():
     params = {'language': 'en'}
     api.get_articles(query, params)
 
-    openai_prompt = OpenAIPrompt(api_key="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")
+    openai_prompt = OpenAIPrompt(api_key="seediscordmessage")
     prompt = openai_prompt.process_prompt_file()
     completion = openai_prompt.generate_completion(prompt)
 
